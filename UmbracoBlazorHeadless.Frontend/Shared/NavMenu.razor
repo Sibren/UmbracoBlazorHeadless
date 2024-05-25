@@ -1,0 +1,21 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <a href="/">Home</a>
+
+            @{
+                if (!IsLoaded)
+                {
+                    <IsLoading />
+                }
+                else
+                {
+                    foreach (var item in NavigationPages)
+                    {
+                        <a href="@item.Route.Path">@item.Name</a>
+                    }
+                }
+            }
+        </div>
+    </div>
+</div>

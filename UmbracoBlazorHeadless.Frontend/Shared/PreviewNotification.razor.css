@@ -1,0 +1,13 @@
+/* UmbracoBlazorHeadless.Frontend/Shared/PreviewNotification.razor.css */
+
+.umbraco-preview-notification {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    z-index: 99999;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
